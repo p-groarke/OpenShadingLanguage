@@ -1,0 +1,145 @@
+// Copyright Contributors to the Open Shading Language project.
+// SPDX-License-Identifier: BSD-3-Clause
+// https://github.com/AcademySoftwareFoundation/OpenShadingLanguage
+
+#ifndef osl_x
+#define osl_x(val) val.x
+#endif
+#ifndef osl_y
+#define osl_y(val) val.y
+#endif
+#ifndef osl_z
+#define osl_z(val) val.z
+#endif
+#ifndef osl_w
+#define osl_w(val) val.w
+#endif
+
+#define osl_xxx(val) \
+	vector(osl_x(val), osl_x(val), osl_x(val))
+#define osl_xxy(val) \
+	vector(osl_x(val), osl_x(val), osl_y(val))
+#define osl_xxz(val) \
+	vector(osl_x(val), osl_x(val), osl_z(val))
+#define osl_xxw(val) \
+	vector(osl_x(val), osl_x(val), osl_w(val))
+#define osl_xyx(val) \
+	vector(osl_x(val), osl_y(val), osl_x(val))
+#define osl_xyy(val) \
+	vector(osl_x(val), osl_y(val), osl_y(val))
+#define osl_xyz(val) \
+	vector(osl_x(val), osl_y(val), osl_z(val))
+#define osl_xyw(val) \
+	vector(osl_x(val), osl_y(val), osl_w(val))
+#define osl_xzx(val) \
+	vector(osl_x(val), osl_z(val), osl_x(val))
+#define osl_xzy(val) \
+	vector(osl_x(val), osl_z(val), osl_y(val))
+#define osl_xzz(val) \
+	vector(osl_x(val), osl_z(val), osl_z(val))
+#define osl_xzw(val) \
+	vector(osl_x(val), osl_z(val), osl_w(val))
+#define osl_xwx(val) \
+	vector(osl_x(val), osl_w(val), osl_x(val))
+#define osl_xwy(val) \
+	vector(osl_x(val), osl_w(val), osl_y(val))
+#define osl_xwz(val) \
+	vector(osl_x(val), osl_w(val), osl_z(val))
+#define osl_xww(val) \
+	vector(osl_x(val), osl_w(val), osl_w(val))
+#define osl_yxx(val) \
+	vector(osl_y(val), osl_x(val), osl_x(val))
+#define osl_yxy(val) \
+	vector(osl_y(val), osl_x(val), osl_y(val))
+#define osl_yxz(val) \
+	vector(osl_y(val), osl_x(val), osl_z(val))
+#define osl_yxw(val) \
+	vector(osl_y(val), osl_x(val), osl_w(val))
+#define osl_yyx(val) \
+	vector(osl_y(val), osl_y(val), osl_x(val))
+#define osl_yyy(val) \
+	vector(osl_y(val), osl_y(val), osl_y(val))
+#define osl_yyz(val) \
+	vector(osl_y(val), osl_y(val), osl_z(val))
+#define osl_yyw(val) \
+	vector(osl_y(val), osl_y(val), osl_w(val))
+#define osl_yzx(val) \
+	vector(osl_y(val), osl_z(val), osl_x(val))
+#define osl_yzy(val) \
+	vector(osl_y(val), osl_z(val), osl_y(val))
+#define osl_yzz(val) \
+	vector(osl_y(val), osl_z(val), osl_z(val))
+#define osl_yzw(val) \
+	vector(osl_y(val), osl_z(val), osl_w(val))
+#define osl_ywx(val) \
+	vector(osl_y(val), osl_w(val), osl_x(val))
+#define osl_ywy(val) \
+	vector(osl_y(val), osl_w(val), osl_y(val))
+#define osl_ywz(val) \
+	vector(osl_y(val), osl_w(val), osl_z(val))
+#define osl_yww(val) \
+	vector(osl_y(val), osl_w(val), osl_w(val))
+#define osl_zxx(val) \
+	vector(osl_z(val), osl_x(val), osl_x(val))
+#define osl_zxy(val) \
+	vector(osl_z(val), osl_x(val), osl_y(val))
+#define osl_zxz(val) \
+	vector(osl_z(val), osl_x(val), osl_z(val))
+#define osl_zxw(val) \
+	vector(osl_z(val), osl_x(val), osl_w(val))
+#define osl_zyx(val) \
+	vector(osl_z(val), osl_y(val), osl_x(val))
+#define osl_zyy(val) \
+	vector(osl_z(val), osl_y(val), osl_y(val))
+#define osl_zyz(val) \
+	vector(osl_z(val), osl_y(val), osl_z(val))
+#define osl_zyw(val) \
+	vector(osl_z(val), osl_y(val), osl_w(val))
+#define osl_zzx(val) \
+	vector(osl_z(val), osl_z(val), osl_x(val))
+#define osl_zzy(val) \
+	vector(osl_z(val), osl_z(val), osl_y(val))
+#define osl_zzz(val) \
+	vector(osl_z(val), osl_z(val), osl_z(val))
+#define osl_zzw(val) \
+	vector(osl_z(val), osl_z(val), osl_w(val))
+#define osl_zwx(val) \
+	vector(osl_z(val), osl_w(val), osl_x(val))
+#define osl_zwy(val) \
+	vector(osl_z(val), osl_w(val), osl_y(val))
+#define osl_zwz(val) \
+	vector(osl_z(val), osl_w(val), osl_z(val))
+#define osl_zww(val) \
+	vector(osl_z(val), osl_w(val), osl_w(val))
+#define osl_wxx(val) \
+	vector(osl_w(val), osl_x(val), osl_x(val))
+#define osl_wxy(val) \
+	vector(osl_w(val), osl_x(val), osl_y(val))
+#define osl_wxz(val) \
+	vector(osl_w(val), osl_x(val), osl_z(val))
+#define osl_wxw(val) \
+	vector(osl_w(val), osl_x(val), osl_w(val))
+#define osl_wyx(val) \
+	vector(osl_w(val), osl_y(val), osl_x(val))
+#define osl_wyy(val) \
+	vector(osl_w(val), osl_y(val), osl_y(val))
+#define osl_wyz(val) \
+	vector(osl_w(val), osl_y(val), osl_z(val))
+#define osl_wyw(val) \
+	vector(osl_w(val), osl_y(val), osl_w(val))
+#define osl_wzx(val) \
+	vector(osl_w(val), osl_z(val), osl_x(val))
+#define osl_wzy(val) \
+	vector(osl_w(val), osl_z(val), osl_y(val))
+#define osl_wzz(val) \
+	vector(osl_w(val), osl_z(val), osl_z(val))
+#define osl_wzw(val) \
+	vector(osl_w(val), osl_z(val), osl_w(val))
+#define osl_wwx(val) \
+	vector(osl_w(val), osl_w(val), osl_x(val))
+#define osl_wwy(val) \
+	vector(osl_w(val), osl_w(val), osl_y(val))
+#define osl_wwz(val) \
+	vector(osl_w(val), osl_w(val), osl_z(val))
+#define osl_www(val) \
+	vector(osl_w(val), osl_w(val), osl_w(val))
